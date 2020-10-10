@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--  -->
+        <!--    Document Title-->
+        <!-- =============================================-->
+        <title>MindBoard</title>
+        <!--  -->
+        <!--    Favicons-->
+        <!--    =============================================-->
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicons/favicon.ico">
+        <link rel="manifest" href="assets/images/favicons/manifest.json">
+        <link rel="mask-icon" href="assets/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileImage" content="assets/images/favicons/mstile-150x150.png">
+        <meta name="theme-color" content="#ffffff">
+        <!--  -->
+        <!--    Stylesheets-->
+        <!--    =============================================-->
+        <!-- Default stylesheets-->
+        <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Template specific stylesheets-->
+        <link href="assets/lib/loaders.css/loaders.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,600,700,800" rel="stylesheet">
+        <link href="assets/lib/iconsmind/iconsmind.css" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+        <link href="assets/lib/hamburgers/dist/hamburgers.min.css" rel="stylesheet">
+        <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+        <link href="assets/lib/remodal/dist/remodal.css" rel="stylesheet">
+        <link href="assets/lib/remodal/dist/remodal-default-theme.css" rel="stylesheet">
+        <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+        <link href="assets/lib/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+        <!-- Main stylesheet and color file-->
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="assets/css/custom.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'> 
+
+        <!-- <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> -->
+    
+    <style>
+        .title{
+            font-family: 'Open sans';
+        }
+        .card{
+         width: 237px;
+         height: 135px;
+         background-color: white;
+         border-radius: 7px;
+}
+.card:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+cursor: pointer;
+}
+#buttnn-id:hover{
+    cursor: pointer;
+    background-color:#956b52bf;
+}
+    </style>
+    </head>
+    <body data-spy="scroll" data-target=".inner-link" data-offset="60">
+        <main>
+            <div class="loading" id="preloader">
+                <div class="loader h-100 d-flex align-items-center justify-content-center">
+                    <div class="line-scale">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+            <section class="background-primary py-3 d-none d-sm-block">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-auto d-none d-lg-block">
+                            <span class="fa fa-map-marker color-warning fw-800 icon-position-fix"></span>
+                            <p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">1010 Avenue, New York, NY 10018 US. </p>
+                        </div>
+                        <div class="col-auto ml-md-auto order-md-2 d-none d-sm-block">
+                            <span class="fa fa-clock-o color-warning fw-800 icon-position-fix"></span>
+                            <p class="ml-2 mb-0 fs--1 d-inline color-white fw-700">Mon-Sat, 8.00-18.00. Sunday CLOSED</p>
+                        </div>
+                        <div class="col-auto">
+                            <span class="fa fa-phone color-warning fw-800 icon-position-fix"></span>
+                            <a class="ml-2 mb-0 fs--1 d-inline color-white fw-700" href="tel:2123865575">212 386 5575, 212 386 5576</a>
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+            <div class="znav-white znav-container sticky-top navbar-elixir" id="znav-container">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg">
+                     
+                    
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <div class="hamburger hamburger--emphatic">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </button>
+                       <div class="title" style="font-family: Open sans;">
+                            <h3>Mind<span style="color:  #7aa228;">Board</span></h3>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav fs-0 fw-700">
+                                
+                             
+                                <li>
+                                    <a href="JavaScript:void(0)">About</a>
+                                  
+                                </li>
+                                <li>
+                                    <a href="services.html">Products</a>
+                                </li>
+                                <li>
+                                    <a href="JavaScript:void(0)">News & Articles</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                             
+                            </ul>
+                            <ul class="navbar-nav ml-lg-auto">
+                                <!-- <li>
+                                    <i class="fa fa-user" aria-hidden="true" style="    font-size: 32px;color: #7aa228;"></i>
+                                </li> -->
+                                
+                                <li>
+                                    <!-- <a href="index2.html">Kevin</a> -->
+                                    <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="index2.html">My Account</a>
+                                </li>
+                                <li>
+                                    <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" style="margin-left: 10px;" href="login.html">Sign Out</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="JavaScript:void(0)"style="font-size: 17px;">My Account</a>
+                                    <ul class="dropdown fs--1">
+                                        <li>
+                                            <a href="#">Dashboard</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">View Usage Statistics</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Account Preferences</a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                             
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    
+
+            <section  class="background-11">
+                <div class="block no-padding">
+                    <div class="container">
+                        <div class="row no-gape">
+                            <aside class="col-lg-3 column">
+                                <div class="widget">
+                                    <div class="tree-widget-sec">
+                                        <div class="contents">
+                                            <button class="btn mb-1" style="width: 255px;text-align: -webkit-match-parent;"  onClick="content1()" id="buttnn-id"><i class="fa fa-th-large" style="margin-right: 10px;" ></i> Dashboard</button>
+                                           
+                                            <button class="btn mb-1" style="width: 255px; text-align: -webkit-match-parent;" onClick="content2()" id="buttnn-id"><i class="fa fa-line-chart" style="margin-right: 10px;" ></i>   View Usage Statistics</button>
+                                      
+                                            <button class="btn mb-1" style="width: 255px;"  onClick="content3()" id="buttnn-id"><i class="fa fa-shopping-cart" style="margin-right: 10px;"></i>   Purchase & Subscription</button>
+                                        
+                                            <button class="btn mb-1" style="width: 255px;text-align: -webkit-match-parent;"  onClick="content4()" id="buttnn-id"><i class="fa fa-user"style="margin-right: 10px;" ></i> My Profile</button>
+                                        </div>
+                                       
+                                        
+                                               
+                                            
+                                        
+                                    </div>
+                                </div>
+                            </aside>
+                            <div class="col-lg-9 column">
+                                <div class="contents">
+                                  <div class="cont"id="page1">
+                                    <div class="background-white p-5 h-100 radius-secondary">
+                                        <h5 style="    margin-top: -33px;
+                                        margin-bottom: 17px;
+                                    ">Dashboard</h5>
+
+                                     <div class="row">
+                                         <div class="col-md-4">
+                                             <div class="card">
+                                                <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                                <div class="card-body" style="text-align: center;text-align: center;
+                                                font-size: 31px;
+                                                font-weight: bold;color: #7aa228;">15</div>
+
+                                             </div>
+                                         </div>
+                                         <div class="col-md-4">
+                                            <div class="card"> 
+                                                <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                                <div class="card-body" style="text-align: center;text-align: center;
+                                                font-size: 31px;
+                                                font-weight: bold;color: #7aa228;">11</div>
+                                            </div>
+                                         </div>
+                                         <div class="col-md-4">
+                                            <div class="card">
+                                                <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                                <div class="card-body" style="text-align: center;text-align: center;
+                                                font-size: 31px;
+                                                font-weight: bold;color: #7aa228;">05</div>
+
+                                            </div>
+                                         </div>
+
+                                     </div>
+                                     <div class="row mt-2">
+                                        <div class="col-md-4">
+                                            <div class="card">
+                                                <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                                <div class="card-body" style="text-align: center;text-align: center;
+                                                font-size: 31px;
+                                                font-weight: bold;color: #7aa228;">12</div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="card">
+                                            <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                            <div class="card-body" style="text-align: center;text-align: center;
+                                            font-size: 31px;
+                                            font-weight: bold;color: #7aa228;">07</div>
+
+                                           </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="card">
+                                            <div class="card-header" style="text-align: center;font-weight: bold;">Loreaum Ipsum </div>
+                                            <div class="card-body" style="text-align: center;text-align: center;
+                                            font-size: 31px;
+                                            font-weight: bold;color: #7aa228;">11</div>
+
+                                           </div>
+                                        </div>
+
+                                    </div>
+                                    </div>
+                                    <!-- <div class="row mt-2">
+                                        <div class="col-md-4">
+                                            <div class="card-1">
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="card-1">
+
+                                           </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                           <div class="card-1">
+
+                                           </div>
+                                        </div>
+
+                                    </div> -->
+                                  </div>
+                                  <div class="cont"id="page2">
+                                      <div class="container">
+                                        <div class="background-white p-5 h-100 radius-secondary">
+                                            <h5 style="    margin-top: -33px;
+                                            margin-bottom: 17px;
+                                        ">View Usage Statistics</h5>
+                                        <!-- <h6>vRate Smart Internet Filter</h6> -->
+                                            <table class="table">
+                                                <thead style="background-color: #fbfbfb;">
+                                                  <tr style="height: 70px;">
+                                                    <th scope="col" style="vertical-align: middle;color: #7aa228;font-size: 13px;">S.No</th>
+                                                    <th scope="col" style="vertical-align: middle;color: #7aa228;font-size: 13px;">Website</th>
+                                                    <th scope="col" style="vertical-align: middle;color: #7aa228;font-size: 13px;">Visited Time</th>
+                                                    <th scope="col" style="vertical-align: middle;color: #7aa228;font-size: 13px;">No of Visiting</th>
+                                                    
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>www.alexa.com</td>
+                                                    <td>07.35.26PM</td>
+                                                    <td>3</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>www.britanica.com</td>
+                                                    <td>10.00.00 PM</td>
+                                                    <td>1</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>www.Songclips.com</td>
+                                                    <td>11.05.36PM</td>
+                                                    <td>3</td>
+                                                  </tr>
+                                                </tbody>
+                                              </table>
+
+                                            </div>
+                                      </div>
+                                   
+                                </div>
+                                <div class="cont"id="page3">
+                                    <div class="content">
+                                        <div class="background-white p-5 h-100 radius-secondary">
+                                            <h5 style="    margin-top: -33px;
+                                            margin-bottom: 17px;
+                                        ">Purchase & Subscription</h5>
+<!-- <h4>Verify Your Purchase History</h4> -->
+<table class="table table-borderless">
+    <thead>
+        <tr style="height: 60px;">
+<th colspan="3" style="vertical-align: middle;    font-size: 22px;">Verify Your Purchase History</th>
+        
+        <th>
+            <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" style="width: 120px;
+            margin-left: -5px;">Print</button>
+        </th>
+    </tr>
+      <tr>
+        <th scope="col">Sno</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Date</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Media Rating API</td>
+        <td>02-02-2020</td>
+        <td>Purchased</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Cyberbullying Detection</td>
+        <td>11-05-2020</td>
+        <td>Purchased</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Vrate Internet filter</td>
+        <td>06-10-2020</td>
+        <td>Ordered</td>
+      </tr>
+    </tbody>
+  </table></div>
+  <!-- <div class="row align-items-stretch justify-content-center">
+    <div class="col-12 mt-4">
+        <div class="background-white p-5 h-100 radius-secondary">
+            <h5>Update Personal Information</h5>
+            <div class="row align-items-center">
+                <div class="col-5 mt-2">
+                    <div class="input-group">
+                        <div class="input-group-addon background-111 fs-2">
+                            <span class="fa fa-user" style="font-size: 15px;"></span>
+                        </div>
+                        <input class="form-control" type="text" placeholder="sample@gmail.com" aria-label="Text input with dropdown button" /> </div>
+                </div>
+                <div class="col-5 mt-2">
+                    <div class="input-group">
+                        <div class="input-group-addon background-111 fs-2">
+                            <span class="fa fa-lock" style="font-size: 15px;"></span>
+                        </div>
+                        <input class="form-control" type="Password" placeholder="******" aria-label="Text input with dropdown button" /> </div>
+                </div>
+                <div class="col-2 mt-2">
+                    <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" href="#">Update</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div> -->
+
+<div class="row align-items-stretch justify-content-center">
+                        
+    <div class="col-6 mt-4">
+        <div class="background-white p-5 h-100 radius-secondary">
+<h5>Add View Usage Statistics</h5>
+<div class="row">
+<div class="col-md-12" style="    text-align: center;
+font-size: 53px;color: #7aa228;">
+    <i class="fa fa-plus-circle" aria-hidden="true"></i>
+</div>
+</div>
+
+
+        </div>
+    </div>
+
+
+                        
+    <div class="col-6 mt-4">
+        <div class="background-white p-5 h-100 radius-secondary">
+           
+            <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700"onclick="myFunction1()" style="    margin-left: 75px;">Cancel Subscription</button>
+
+            <div id="myDIV" style="display: none;">
+                <p style="color: black;
+                font-weight: bold;margin-top: 10px;">Are You sure you want to cancel your subscription?</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700"style="width:128px;" href="#">Keep Plan</button></div>
+               
+                <div class="col-md-6">
+                    <button class="btn btn-primary btn-capsule btn-sm border-2x fw-700" style="float:left;width: 128px;">Cancel</button>
+                </div>
+            </div>
+            </div>
+            
+            <!-- <button id="hide" style="display:none">Hide</button> -->
+          
+<!-- <h5>Cancel your Subscription?</h5> -->
+<!-- <button onclick="myFunction1()">Cancel Subscription</button> -->
+
+<!-- <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700" onclick="ShowDiv()">Print</button>
+
+<div id="myDiv" style="display:none;"  >
+<p>Are You sure you want to cancel your subscription?</p>
+                                    <div class="row mt-3">
+                                        <div class="col-md-6">  
+                                    <button class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700"style="width:116px;" href="#">Keep Plan</button></div>
+                                    <div class="col-md-6">  
+                                    <button class="btn btn-primary btn-capsule btn-sm border-2x fw-700" style="float:left;">Cancel</button></div>
+</div> -->
+
+
+        </div>
+        <!-- <div id="myDIV">
+            This is my DIV element.
+            </div> -->
+    </div>
+  
+      
+
+
+
+            
+                                    </div>
+                                 
+                                   
+                                </div>
+                                </div>
+                            </div>
+                            <div class="cont"id="page4">
+                                <div class="container">
+                                    <div class="background-white p-5 h-100 radius-secondary">
+                                        <h5 style="    margin-top: -33px;
+                                        margin-bottom: 17px;
+                                    ">Update Personal Information</h5>
+                                        <div class="row align-items-center">
+                                            <div class="col-6  mt-2">
+                                                <label>First Name</label>
+                                                <div class="input-group">
+                                                  
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-user" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="text" placeholder="Kevin" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                            <div class="col-6  mt-2">
+                                                <label>Last Name</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-user" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="Password" placeholder="Castro" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-6  mt-2">
+                                                <label>Email</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-envelope" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="text" placeholder="kevin@gmail.com" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                            <div class="col-6  mt-2">
+                                                <label>Mobile No</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-phone" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="Password" placeholder="+91 8899889988" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            <div class="col-6  mt-2">
+                                                <label>Gender</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-user" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="text" placeholder="Male" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                            <div class="col-6  mt-2">
+                                                <label>DOB</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-calendar" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="Password" placeholder="01-10-1990" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                        </div>
+                                        <!-- <h5>Social Edits</h5> -->
+                                        
+                                        <div class="row align-items-center">
+                                            
+                                            <div class="col-6  mt-2">
+                                                <label>Country</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-flag" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="text" placeholder="UK" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                            <div class="col-6  mt-2">
+                                                <label>City</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-building" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="Password" placeholder="Melborn" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+                                            
+                                            <div class="col-6  mt-2">
+                                                <label>Facebook Id</label>
+                                                <div class="input-group">
+                                                  
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-facebook" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="text" placeholder="kevin@fb.com" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                            <div class="col-6  mt-2">
+                                                <label>Linkedin Id</label>
+                                                <div class="input-group">
+                                                    <!-- <div class="input-group-addon background-111 fs-2">
+                                                        <span class="fa fa-linkedin" style="font-size: 15px;"></span>
+                                                    </div> -->
+                                                    <input class="form-control" type="Password" placeholder="Kevin@linkedin.com" aria-label="Text input with dropdown button" /> </div>
+                                            </div>
+                                        </div>
+                                        <div class="row align-items-center">
+<div class="col-12 mt-2">
+   
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+<label for="myCheck">Change Password</label> 
+</div>
+</div>
+<div id="text" style="display:none">
+<div class="row align-items-center">
+    <div class="col-6  mt-2">
+        <label>Current Password</label>
+        <div class="input-group">
+          
+            <!-- <div class="input-group-addon background-111 fs-2">
+                <span class="fa fa-facebook" style="font-size: 15px;"></span>
+            </div> -->
+            <input class="form-control" type="" placeholder="* * * * * *" aria-label="Text input with dropdown button" /> </div>
+    </div>
+    <div class="col-6  mt-2">
+        <label>New Password</label>
+        <div class="input-group">
+            <!-- <div class="input-group-addon background-111 fs-2">
+                <span class="fa fa-linkedin" style="font-size: 15px;"></span>
+            </div> -->
+            <input class="form-control" type="Password" placeholder="" aria-label="Text input with dropdown button" /> </div>
+    </div>
+</div>
+</div>
+
+                                        <div class="row align-items-center">
+                                            <div class="col-12  mt-3">
+                                                <a class="btn btn-outline-primary btn-capsule btn-sm border-2x fw-700"  href="#" style="float: right;">Update</a>
+
+                                            </div>
+                                        </div>
+
+
+
+                                        </div>
+
+
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="background-primary text-center py-4">
+                <div class="container">
+                    <div class="row align-items-center" style="opacity: 0.85;">
+                        <div class="col-sm-3 text-sm-left">
+                            <!-- <a href="index.html">
+                                <img src="assets/images/logo-light.png" alt="" />
+                            </a> -->
+                        </div>
+                        <div class="col-sm-6 mt-3 mt-sm-0">
+                            <p class="color-white lh-6 mb-0 fw-600">&copy; 2020 MindBoard</p>
+                        </div>
+                        <div class="col text-sm-right mt-3 mt-sm-0">
+                            <!-- <a class="color-white" href="https://themewagon.com/" target="_blank"> Designed by Themewagon</a> -->
+                        </div>
+                    </div>
+                    <!--/.row-->
+                </div>
+                <!--/.container-->
+            </section>
+        </main>
+        <!--  -->
+        <!--    JavaScripts-->
+        <!--    =============================================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script src="assets/lib/jquery/dist/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/lib/imagesloaded/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/lib/gsap/src/minified/TweenMax.min.js"></script>
+        <script src="assets/lib/gsap/src/minified/plugins/ScrollToPlugin.min.js"></script>
+        <script src="assets/lib/CustomEase.min.js"></script>
+        <script src="assets/js/config.js"></script>
+        <script src="assets/js/zanimation.js"></script>
+        <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+        <script src="assets/lib/remodal/dist/remodal.js"></script>
+        <script src="assets/lib/lightbox2/dist/js/lightbox.js"></script>
+        <script src="assets/lib/flexslider/jquery.flexslider-min.js"></script>
+        <script src="assets/js/core.js"></script>
+        <script src="assets/js/main.js"></script>
+
+        <script>
+            {
+        
+        document.getElementById("page1").style.display = "block";
+        document.getElementById("page2").style.display = "none";
+        
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        }
+        function content1() {
+        document.getElementById("page1").style.display = "block";
+        document.getElementById("page2").style.display = "none";
+        
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        }
+        function content2() {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "block";
+        
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        
+        }
+        
+        function content3() {
+        
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "block";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "none";
+        }
+        function content4() {
+        
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "block";
+        document.getElementById("page5").style.display = "none";
+        }
+        function content5() {
+        
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "none";
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "block";
+        
+        }
+        
+    </script>
+    <script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+<script>
+    function myFunction1() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+     <!-- function myFunction1() {
+        document.getElementById("myDIV").style.display="block";
+    document.getElementById("cancel-btn").style.display="none";
+       }
+    function myFunction2() {
+       
+    document.getElementById("cancel-btn").style.display="none";
+       }
+    function myFunction3() {
+        document.getElementById("myDIV").style.display="none";
+    document.getElementById("cancel-btn").style.display="block";
+       } -->
+
+<!-- <script>
+    function myFunction1() {
+      var x = document.getElementById("myDIV");
+      if (window.getComputedStyle(x).display === "none") {
+        x.style.display = "block";
+      }
+    }
+    </script> -->
+
+
+<!-- <script>
+    function myFunction1() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script> -->
+<!-- <script>
+    function ShowDiv() {
+    document.getElementById("myDiv").style.display = "";
+}
+</script> -->
+
+
+    
+ 
+    </body>
+</html>
